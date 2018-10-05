@@ -12,16 +12,17 @@
 
 ## Install NPM and Sass
 
-node -v
-npm init (open json file for us) to create a packet of json file
-npm install node-sass --save-dev
+* node -v
+* npm init (open json file for us) to create a packet of json file
+* npm install node-sass --save-dev
 
-eg. npm install jquery
-    npm unistall jquery --save
+example;
+* npm install jquery
+* npm unistall jquery --save
 
 ```javascript
 "script": {
     "compile:sass": "node-sass sass/main.scss css/style.css -w"
 }
 ```
-npm run compile:sass
+* npm run compile:sass

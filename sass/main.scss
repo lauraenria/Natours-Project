@@ -3,6 +3,7 @@ $color-primary-light:#7ed56f;
 $color-primary-dark:#28b485;
 $color-grey-dark:#777;
 $color-white: #fff;
+$color-black: #000;
 
 /* reset */
 *,
@@ -38,29 +39,31 @@ body {
     background-position: top;
     position: relative;
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+    &__logo-box {
+        position: absolute;
+        top: 4rem;
+        left: 4rem;
+    }
+
+    &__logo {
+        height: 3.5rem;
+    }
+
+    &__text-box {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        -webkit-transition: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
 }
 
-.header__logo-box {
-    position: absolute;
-    top: 4rem;
-    left: 4rem;
-}
 
-.header__logo {
-    height: 3.5rem;
-}
-
-.header__text-box {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    -webkit-transition: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
 
 .heading-primary {
     color: $color-white;
@@ -69,25 +72,27 @@ body {
     backface-visibility: hidden;
     /* fix shaking animation */
     margin-bottom: 6rem;
+
+    &--main {
+        display: block;
+        font-size: 6rem;
+        font-weight: 400;
+        letter-spacing: 3.5rem;
+        /* Animation Property */
+        animation: moveInLeft 1s ease-out;
+    }
+
+    &--sub {
+        display: block;
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 1.75rem;
+        /* Animation Property */
+        animation: moveInRight 1s ease-out;
+    }
 }
 
-.heading-primaty--main {
-    display: block;
-    font-size: 6rem;
-    font-weight: 400;
-    letter-spacing: 3.5rem;
-    /* Animation Property */
-    animation: moveInLeft 1s ease-out;
-}
 
-.heading-primaty--sub {
-    display: block;
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: 1.75rem;
-    /* Animation Property */
-    animation: moveInRight 1s ease-out;
-}
 
 @keyframes moveInLeft {
     0% {
@@ -135,72 +140,75 @@ body {
     }
 }
 
-.btn,
-.btn:link,
-.btn:visited {
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 1.5rem 4rem;
-    display: inline-block;
-    border-radius: 10rem;
-    -webkit-transition: all .2s;
-    transition: all .2s;
-    position: relative;
-    font-size: 1.6rem;
-}
+.btn {
 
-.btn:hover {
-    -webkit-transform: translateY(-3px);
-    transform: translateY(-3px);
-    /* from botton to top */
-    -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
-}
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1.5rem 4rem;
+        display: inline-block;
+        border-radius: 10rem;
+        -webkit-transition: all .2s;
+        transition: all .2s;
+        position: relative;
+        font-size: 1.6rem;
+    }
 
-.btn:hover::after {
-    -webkit-transform: scaleX(1.4) scaleY(1.6);
-    -moz-transform: scaleX(1.4) scaleY(1.6);
-    -o-transform: scaleX(1.4) scaleY(1.6);
-    -ms-transform: scaleX(1.4) scaleY(1.6);
-    transform: scaleX(1.4) scaleY(1.6);
-    opacity: 0;
-}
+    &:hover {
+        -webkit-transform: translateY(-3px);
+        transform: translateY(-3px);
+        /* from botton to top */
+        -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
 
-.btn:active {
-    -webkit-transform: translateY(-1px);
-    transform: translateY(-1px);
-    -webkit-box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
-}
+        &:hover::after {
+            -webkit-transform: scaleX(1.4) scaleY(1.6);
+            -moz-transform: scaleX(1.4) scaleY(1.6);
+            -o-transform: scaleX(1.4) scaleY(1.6);
+            -ms-transform: scaleX(1.4) scaleY(1.6);
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
 
-.btn--white {
-    background-color: $color-white;
-    color: $color-grey-dark;
-}
 
-.btn--white::after {
-    background-color: $color-white;
-}
+    &:active {
+        -webkit-transform: translateY(-1px);
+        transform: translateY(-1px);
+        -webkit-box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+    }
 
-.btn::after {
-    content: "";
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    border-radius: 10rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    -webkit-transition: all .4s;
-    -moz-transition: all .4;
-    -o-transition: all .4;
-    -ms-transition: all .4;
-    transition: all .4;
-}
+    &--white {
+        background-color: $color-white;
+        color: $color-grey-dark;
 
-.btn--animated {
-    animation: moveInBottom .5s ease-out 0.75;
-    animation-fill-mode: backwards;
-    /* it will apply the style up 0% before the animation start */
+        &--white::after {
+            background-color: $color-white;
+        }
+    }
+
+    &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 10rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        -webkit-transition: all .4s;
+        -moz-transition: all .4;
+        -o-transition: all .4;
+        -ms-transition: all .4;
+        transition: all .4;
+    }
+
+    &--animated {
+        animation: moveInBottom .5s ease-out 0.75;
+        animation-fill-mode: backwards;
+        /* it will apply the style up 0% before the animation start */
+    }
 }
