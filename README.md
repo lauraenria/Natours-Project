@@ -1,7 +1,6 @@
 # Learning tips
 
 * The best way to perform a basic reset using the universal selector
-    * * How to set project-wide font definitions.
 
 * How to set project-wide font definitions.
 
