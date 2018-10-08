@@ -25,4 +25,19 @@ example;
     "compile:sass": "node-sass sass/main.scss css/style.css -w"
 }
 ```
-* npm run compile:sass
+* `npm run compile:sass`
+
+* `npm install live-server -g○` 
+    * live-server
+
+[Check here my project!](https://xenodochial-ritchie-156b6b.netlify.com/)
+
+tips:
+
+```css
+&:not(:last-child){
+        
+    }
+}
+
+```

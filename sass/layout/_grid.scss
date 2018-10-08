@@ -1,5 +1,25 @@
-
 .row {
-    max-width: 114rem;
+    max-width: $grid-width;
+    // standard 1140px grid
     background-color: #eee;
+    margin: 0 auto;
+    // center the row in the viweport
+
+    &:not(:last-child) {
+        margin-bottom: $gutter-vertical;
+    }
+
+    @include clearfix;
+
+    .col-1-of-2 {
+        width: calc((100% - #{$gutter-vertical}) / 2);
+        background-color: orange;
+        float: left;
+
+        &:not(:last-child) {
+            margin-right: $gutter-horizonatl;
+        }
+    }
+
+
 }
