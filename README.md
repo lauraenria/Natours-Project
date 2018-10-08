@@ -40,4 +40,38 @@ tips:
     }
 }
 
+    .col-1-of-2 {
+        width: calc((100% - #{$gutter-vertical}) / 2);
+        background-color: orange;
+        float: left;
+
+        &:not(:last-child) {
+            margin-right: $gutter-horizonatl;
+        }
+    }
+
+    .col-1-of-3 {
+        width: calc((100% - 2 * #{$gutter-vertical}) / 3);
+        background-color: lightgreen;
+        float: left;
+
+        &:not(:last-child) {
+            margin-right: $gutter-horizonatl;
+        }
+    }
+
+
+
+/* select all the classes which start with col- */
+[class^='col-']{}
+
+    
+/* select any classes which contain with col- */
+
+[class*='col-']{}
+
+/* select any classes which ends with col- */
+
+[class$='col-']{}
+
 ```
