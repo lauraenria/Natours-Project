@@ -91,4 +91,16 @@ tips:
 /* section.section-about */
 <section class="section-about"></section>`
 
+/* lorem + tab */
+/* random text */
+
+/* &rarr; */
+<a href="#" class="btn-text">Learn more &rarr;</a>
+
 ```
+
+## resources
+
+* [loremipsum generator](https://loremipsum.io/)
+* [codingheroes](http://codingheroes.io/resources/)
+    * [HTML Entity Reference by CSS-Tricks](https://css-tricks.com/snippets/html/glyphs/)
