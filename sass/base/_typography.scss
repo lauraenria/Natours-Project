@@ -19,7 +19,7 @@ body {
         font-size: 6rem;
         font-weight: 400;
         letter-spacing: 3.5rem;
-       
+
 
         /* Animation Property */
         animation: moveInLeft 1s ease-out;
@@ -34,5 +34,24 @@ body {
 
         /* Animation Property */
         animation: moveInRight 1s ease-out;
+    }
+}
+
+.heading-secondary {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    background-image: linear-gradient(to right, $color-primary-light,
+        $color-primary-dark);
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: .2rem;
+    transition: all .2s;
+
+    &:hover {
+        transform: skewY(2deg) skew(15deg) scale(1.1);
+        // box-shadow: Horizontal-offset Vertical-offset blur spread color |inset|initial|inherit;
+        text-shadow: .5rem 1rem 2rem rgba($color-black, .2)
     }
 }

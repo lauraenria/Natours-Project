@@ -27,8 +27,10 @@ example;
 ```
 * `npm run compile:sass`
 
-* `npm install live-server -g○` 
+* `npm install live-server -g` 
     * live-server
+
+* if `@import` doens't work properly but everything seems perfect remember to restart SASS
 
 [Check here my project!](https://xenodochial-ritchie-156b6b.netlify.com/)
 
@@ -73,5 +75,20 @@ tips:
 /* select any classes which ends with col- */
 
 [class$='col-']{}
+
+```
+
+
+### Emmet
+
+```css
+
+/* .nameclass + tab  */
+/* .test */
+<div class="test"></div>
+
+/* tag.nameclass + tab  */
+/* section.section-about */
+<section class="section-about"></section>`
 
 ```
