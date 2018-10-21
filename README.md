@@ -73,9 +73,14 @@ tips:
 /* select all direct child */
 & > * 
 
+/* empty space */
+&nbsp; 
+
 ```
 
 ### CSS property to remember
+
+**clip-path**: creates a clipping region that sets what part of an element should be shown.
 
 * **outline**(shorthand): An outline is a line that is drawn around elements, outside the borders, to make the element "stand out".
 
@@ -84,6 +89,11 @@ tips:
 *  **perspective**: it must be set on the parent of the 3D-positioned child we want to give it some perspective
 
 * **backface-visibility**: Hide and show the back face an element
+
+* **background-blend-mode**: defines the blending mode of each background layer (color and/or image). eg *background-blend-mode: screen;*
+
+* **box-decoration-break**: specifies how the background, padding, border, border-image, box-shadow, margin, and clip-path of an element is applied when the box for the element is fragmented.
+
 
 
 ### Emmet
@@ -137,3 +147,5 @@ Always to define the width of images with percentages if possible because in thi
 * [codingheroes](http://codingheroes.io/resources/)
 * [HTML Entity Reference by CSS-Tricks](https://css-tricks.com/snippets/html/glyphs/)
 * [Free outline Iconset](http://linea.io/)
+* [Unsplash - Free beautiful images](https://unsplash.com/)
+* [clip-path maker](https://bennettfeely.com/clippy/)

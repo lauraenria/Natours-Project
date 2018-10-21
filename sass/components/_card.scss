@@ -1,13 +1,14 @@
 .card {
+    // FUNCTIONALITY
     -webkit-perspective: 150rem;
     -moz-perspective: 150rem;
     -o-perspective: 150rem;
     perspective: 150rem;
     position: relative;
-    height: 50rem;
+    height: 52rem;
 
     &__side {
-        height: 50rem;
+        height: 52rem;
         transition: all .8s ease-in-out;
         position: absolute;
         top: 0;
@@ -15,6 +16,7 @@
         width: 100%;
         backface-visibility: hidden;
         border-radius: 3px;
+        overflow: hidden;
         box-shadow: 0 1.5rem 4px rgba($color-black, .15);
 
 
@@ -37,65 +39,81 @@
 
 
     &:hover &__side--front {
-        transform: rotateY(180deg);
+        transform: rotateY(-180deg);
     }
 
     // this section come back to the original position when we hover it
     &:hover &__side--back {
         transform: rotateY(0);
+
     }
 
+    // FRONT SIDE STYLING
+    .card__picture {
+        background-size: cover;
+        height: 23rem;
+        background-blend-mode: screen;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 
+        &--1 {
+            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark),
+                url(../img/nat-5.jpg);
+        }
 
+        &--2 {
+            background-image: url(../img/nat-5.jpg);
+
+        }
+
+        &--3 {
+            background-image: url(../img/nat-5.jpg);
+
+        }
+    }
+
+    &__heading {
+        font-size: 2.8rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-align: right;
+        color: $color-white;
+        position: absolute;
+        top: 12rem;
+        right: 2rem;
+        width: 75%;
+    }
+
+    &__heading-span {
+        padding: 1rem 1.5rem;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+
+        &--1 {
+            background-image: linear-gradient(to right bottom,
+                rgba($color-secondary-light, .85),
+                rgba($color-secondary-dark, .85));
+        }
+
+    }
+
+    &__details {
+        padding: 3rem;
+
+        ul {
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
+
+            li {
+                text-align: center;
+                font-size: 1.5rem;
+                padding: 1rem;
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid $color-grey-light-2;
+                }
+            }
+        }
+    }
 }
-
-// .card {
-//     -webkit-perspective: 150rem;
-//     -moz-perspective: 150rem;
-//     -o-perspective: 150rem;
-//     perspective: 150rem;
-
-//     &__side {
-//         color: #fff;
-//         font-size: 10rem;
-//         height: 50rem;
-//         -webkit-transition: transform all .8s;
-//         -moz-transition: transform all .8s;
-//         -o-transition: transform all .8s;
-//         transition: all .8s;
-
-
-// &--front {
-//     background: orangered;
-
-// }
-
-// &--back {
-//     background: greenyellow;
-//     transform: rotateY(180deg);
-// }
-
-//     }
-
-//     // .card:hover .card__side--front{}
-//     &:hover &__side--front {
-//         -webkit-transform: rotateY(180deg);
-//         -moz-transform: rotateY(180deg);
-//         -o-transform: rotateY(180deg);
-//         transform: rotateY(180deg);
-//     }
-
-//     &:hover &__side--front {
-//         -webkit-transform: rotateY(0);
-//         -moz-transform: rotateY(0);
-//         -o-transform: rotateY(0);
-//         transform: rotateY(0);
-//     }
-
-//     &:hover &__side--back {
-//         -webkit-transform: rotateY(0);
-//         -moz-transform: rotateY(0);
-//         -o-transform: rotateY(0);
-//         transform: rotateY(0);
-//     }
-// }
