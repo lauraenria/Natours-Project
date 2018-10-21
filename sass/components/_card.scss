@@ -1,0 +1,101 @@
+.card {
+    -webkit-perspective: 150rem;
+    -moz-perspective: 150rem;
+    -o-perspective: 150rem;
+    perspective: 150rem;
+    position: relative;
+    height: 50rem;
+
+    &__side {
+        height: 50rem;
+        transition: all .8s ease-in-out;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        backface-visibility: hidden;
+        border-radius: 3px;
+        box-shadow: 0 1.5rem 4px rgba($color-black, .15);
+
+
+        &--front {
+            background: $color-white;
+
+        }
+
+        &--back {
+            // this section is already flipped before the hover
+            transform: rotateY(180deg);
+
+            &-1 {
+                background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+            }
+        }
+
+
+    }
+
+
+    &:hover &__side--front {
+        transform: rotateY(180deg);
+    }
+
+    // this section come back to the original position when we hover it
+    &:hover &__side--back {
+        transform: rotateY(0);
+    }
+
+
+
+}
+
+// .card {
+//     -webkit-perspective: 150rem;
+//     -moz-perspective: 150rem;
+//     -o-perspective: 150rem;
+//     perspective: 150rem;
+
+//     &__side {
+//         color: #fff;
+//         font-size: 10rem;
+//         height: 50rem;
+//         -webkit-transition: transform all .8s;
+//         -moz-transition: transform all .8s;
+//         -o-transition: transform all .8s;
+//         transition: all .8s;
+
+
+// &--front {
+//     background: orangered;
+
+// }
+
+// &--back {
+//     background: greenyellow;
+//     transform: rotateY(180deg);
+// }
+
+//     }
+
+//     // .card:hover .card__side--front{}
+//     &:hover &__side--front {
+//         -webkit-transform: rotateY(180deg);
+//         -moz-transform: rotateY(180deg);
+//         -o-transform: rotateY(180deg);
+//         transform: rotateY(180deg);
+//     }
+
+//     &:hover &__side--front {
+//         -webkit-transform: rotateY(0);
+//         -moz-transform: rotateY(0);
+//         -o-transform: rotateY(0);
+//         transform: rotateY(0);
+//     }
+
+//     &:hover &__side--back {
+//         -webkit-transform: rotateY(0);
+//         -moz-transform: rotateY(0);
+//         -o-transform: rotateY(0);
+//         transform: rotateY(0);
+//     }
+// }

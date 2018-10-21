@@ -1,11 +1,10 @@
-
-
 .section-about {
     background-color: $color-grey-light-1;
     padding: 25rem 0;
     margin-top: -20vh;
 
 }
+
 // This will apply a background image to this container
 // apply transparent colors, and skew it
 .section-features {
@@ -18,9 +17,15 @@
     transform: skewY(-7deg);
     margin-top: -10rem;
 
-  // This will make our columns straight
-  // we apply the css rule directly to the children
-    & > * {
+    // This will make our columns straight
+    // we apply the css rule directly to the children
+    &>* {
         transform: skewY(7deg);
     }
+}
+
+.section-tours {
+    background-color: $color-grey-light-1;
+    padding: 25rem 0 50rem 0;
+    margin-top: -10rem;
 }

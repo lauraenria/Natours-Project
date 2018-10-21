@@ -81,6 +81,11 @@ tips:
 
 * **outline-offset**: dds space between an outline and the edge or border of an element.
 
+*  **perspective**: it must be set on the parent of the 3D-positioned child we want to give it some perspective
+
+* **backface-visibility**: Hide and show the back face an element
+
+
 ### Emmet
 
 ```css
