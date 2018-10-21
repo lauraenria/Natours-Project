@@ -70,6 +70,9 @@ tips:
 
 [class$='col-'] {}
 
+/* select all direct child */
+& > * 
+
 ```
 
 ### CSS property to remember
@@ -107,6 +110,15 @@ tips:
     <img src="" alt="" class="composition__photo composition_photo--p1">
 </div>
 
+.row>.col-1-of-4.feature-box*4
+
+<div class="row">
+    <div class="col-1-of-4 feature-box"</div>
+    <div class="col-1-of-4 feature-box"</div>
+    <div class="col-1-of-4 feature-box"</div>
+    <div class="col-1-of-4 feature-box"</div>
+</div>
+
 
 ```
 
@@ -119,3 +131,4 @@ Always to define the width of images with percentages if possible because in thi
 * [loremipsum generator](https://loremipsum.io/)
 * [codingheroes](http://codingheroes.io/resources/)
 * [HTML Entity Reference by CSS-Tricks](https://css-tricks.com/snippets/html/glyphs/)
+* [Free outline Iconset](http://linea.io/)
