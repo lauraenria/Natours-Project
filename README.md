@@ -76,6 +76,18 @@ tips:
 /* empty space */
 &nbsp; 
 
+/* action box */
+.cta 
+
+/* center method with positioning absolute */
+
+.card__cta {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, 50);
+        }
+
 ```
 
 ### CSS property to remember
