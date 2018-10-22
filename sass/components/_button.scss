@@ -60,58 +60,66 @@
         &::after {
             background-color: $color-white;
         }
-
-
     }
 
-
-    &::after {
-        content: "";
-        display: inline-block;
-        height: 100%;
-        width: 100%;
-        border-radius: 10rem;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        -webkit-transition: all .4s;
-        -moz-transition: all .4;
-        -o-transition: all .4;
-        -ms-transition: all .4;
-        transition: all .4;
-    }
-
-    &--animated {
-        animation: moveInBottom .5s ease-out 0.75;
-        animation-fill-mode: backwards;
-        /* it will apply the style up 0% before the animation start */
-    }
-}
-
-.btn-text {
-
-    &:link,
-    &:visited {
-        font-size: $default-font-size;
-        color: $color-primary;
-        display: inline-block;
-        text-decoration: none;
-        border-bottom: 1px solid $color-primary;
-        padding: 3px;
-        transition: all .2s;
-
-    }
-
-    &:hover {
+    &--green {
         background-color: $color-primary;
         color: $color-white;
-        box-shadow: 0 1rem 2rem rgba($color-black, .15);
-        transform: translateY(-2)
+
+        &::after {
+            background-color: $color-primary;
+        }
     }
 
-    &:active {
-        box-shadow: 0 .5rem 1rem rgba($color-black, .15);
-        transform: translateY(0)
+
+
+        &::after {
+            content: "";
+            display: inline-block;
+            height: 100%;
+            width: 100%;
+            border-radius: 10rem;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            -webkit-transition: all .4s;
+            -moz-transition: all .4;
+            -o-transition: all .4;
+            -ms-transition: all .4;
+            transition: all .4;
+        }
+
+        &--animated {
+            animation: moveInBottom .5s ease-out 0.75;
+            animation-fill-mode: backwards;
+            /* it will apply the style up 0% before the animation start */
+        }
     }
-}
+
+    .btn-text {
+
+        &:link,
+        &:visited {
+            font-size: $default-font-size;
+            color: $color-primary;
+            display: inline-block;
+            text-decoration: none;
+            border-bottom: 1px solid $color-primary;
+            padding: 3px;
+            transition: all .2s;
+
+        }
+
+        &:hover {
+            background-color: $color-primary;
+            color: $color-white;
+            box-shadow: 0 1rem 2rem rgba($color-black, .15);
+            transform: translateY(-2)
+        }
+
+        &:active {
+            box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+            transform: translateY(0)
+        }
+    }
