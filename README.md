@@ -90,6 +90,8 @@ tips:
 
 ```
 
+
+
 ### CSS property to remember
 
 **clip-path**: creates a clipping region that sets what part of an element should be shown.
@@ -105,6 +107,17 @@ tips:
 * **background-blend-mode**: defines the blending mode of each background layer (color and/or image). eg *background-blend-mode: screen;*
 
 * **box-decoration-break**: specifies how the background, padding, border, border-image, box-shadow, margin, and clip-path of an element is applied when the box for the element is fragmented.
+
+* **figure** tag specifies self-contained content
+
+* **figcaption** defines a caption for a `<figure>` element.
+
+* **shape-outside** defines a shape around which adjacent inline content should wrap.
+
+** In order to **add space to a float element** use **transform: translate()** don't use margin or anything like that.
+
+**there is no way to have transform property on one element** - they are working on it.
+
 
 
 
@@ -124,7 +137,7 @@ tips:
 /* random text */
 
 /* &rarr; */
-<a href="#" class="btn-text">Learn more &rarr;</a>
+<a href="" class="btn-text">Learn more &rarr;</a>
 
 /* defining the children of the composition class */
 .composition>img.composition__photo
@@ -161,3 +174,4 @@ Always to define the width of images with percentages if possible because in thi
 * [Free outline Iconset](http://linea.io/)
 * [Unsplash - Free beautiful images](https://unsplash.com/)
 * [clip-path maker](https://bennettfeely.com/clippy/)
+
