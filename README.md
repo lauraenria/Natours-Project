@@ -86,6 +86,27 @@ tips:
             transform: translate(-50%, -50%);
         }
 
+.container {
+     padding: 15rem 0;
+}
+
+background-size: 100%; ==  background-size: cover;
+
+/* solid color gradient */
+.book {
+    background-image: linear-gradient( 105deg, 
+    rgba($color-white, .9) 0%,
+     rgba($color-white, .9) 50%,
+     transparent 50%), 
+     url(../img/nat-10.jpg);
+    background-size: 100%;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.2);
+
+    // testing purpose
+    height: 50rem;
+}
+
 ```
 
 
@@ -123,6 +144,10 @@ tips:
 **source** tag is used to specify multiple media resources for media elements
 
 **object-fit: cover;** is used to specify how an <img> or <video> should be resized to fit its container.
+
+**solid color gradient css**
+
+**::input-placeholder pseudo-element:**
 
 ### Emmet
 
