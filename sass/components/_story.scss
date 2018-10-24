@@ -31,13 +31,50 @@
         clip-path: circle(50% at 50% 50%);
 
         transform: translateX(-3rem) skewX(12deg);
+        // this is for the caption
+        position: relative;
     }
 
-    &__imag {
+    &__img {
         height: 100%;
+        transform: translateX(-4rem) scale(1.4);
+        // Fix glitch transform
+        backface-visibility: hidden;
+        transition: all .5s;
     }
 
     &__text {
-         transform: skewX(12deg);
+        transform: skewX(12deg);
     }
+
+    &__caption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 20%);
+        color: $color-white;
+        text-transform: uppercase;
+        font-size: 1.7rem;
+        text-align: center;
+        // by default this element is hidden
+        opacity: 0;
+        transition: all .5s;
+        // this will fix the shaking of the animation when hover it
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -ms-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+    &:hover &__caption {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+
+    &:hover &__img {
+        transform: translateX(-4rem) scale(1);
+        filter: blur(3px) brightness(80%) ;
+    }
+
 }

@@ -28,8 +28,6 @@ example;
 
 * Check classes correspondence between HTML and Css/Sass
 
-[Check here my project!](https://xenodochial-ritchie-156b6b.netlify.com/)
-
 tips:
 
 ```css
@@ -85,7 +83,7 @@ tips:
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, 50);
+            transform: translate(-50%, -50%);
         }
 
 ```
@@ -118,8 +116,7 @@ tips:
 
 **there is no way to have transform property on one element** - they are working on it.
 
-
-
+**filter** defines visual effects (like blur and saturation) to an element eg *filter: blur(3px) brightness(80%)*
 
 ### Emmet
 
@@ -175,3 +172,5 @@ Always to define the width of images with percentages if possible because in thi
 * [Unsplash - Free beautiful images](https://unsplash.com/)
 * [clip-path maker](https://bennettfeely.com/clippy/)
 
+## live!
+[Check here my project!](https://xenodochial-ritchie-156b6b.netlify.com/)
