@@ -107,6 +107,13 @@ background-size: 100%; ==  background-size: cover;
     height: 50rem;
 }
 
+/* on bottom always */
+padding: 1.5rem 2rem
+
+&:focus:invalid {
+    
+}
+
 ```
 
 
