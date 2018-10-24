@@ -118,6 +118,12 @@ tips:
 
 **filter** defines visual effects (like blur and saturation) to an element eg *filter: blur(3px) brightness(80%)*
 
+**video** tag specifies a standard way to embed a video in a web page
+
+**source** tag is used to specify multiple media resources for media elements
+
+**object-fit: cover;** is used to specify how an <img> or <video> should be resized to fit its container.
+
 ### Emmet
 
 ```css
@@ -171,6 +177,7 @@ Always to define the width of images with percentages if possible because in thi
 * [Free outline Iconset](http://linea.io/)
 * [Unsplash - Free beautiful images](https://unsplash.com/)
 * [clip-path maker](https://bennettfeely.com/clippy/)
+* [Free video for homepage](http://coverr.co/)
 
 ## live!
 [Check here my project!](https://xenodochial-ritchie-156b6b.netlify.com/)

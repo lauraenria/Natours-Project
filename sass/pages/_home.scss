@@ -31,8 +31,7 @@
 }
 
 .section-stories {
+    // this is for the background video
+    position: relative;
     padding: 15rem 0;
-    // momentary background for video
-    background-color: $color-grey-light-1;
-
 }
